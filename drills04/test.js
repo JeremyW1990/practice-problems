@@ -29,7 +29,6 @@ var testVals = [{
       {
         message: 'all .otherConvert elements must have their text replaced with numbers, if the original was a text number',
         test: ()=> {
-          debugger;
           const expected = ['4','8','what?'];
           return Object.values(document.querySelectorAll('.otherConvert')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.otherConvert').length;
         }
